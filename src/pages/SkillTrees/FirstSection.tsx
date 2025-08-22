@@ -1,6 +1,6 @@
 import { Card, Grid } from "@mui/material";
 import Park, { IPark } from "./Park";
-import { SkillTree } from "./../Tree";
+import { SkillTree } from "./Tree";
 interface IFirstSection {
   displayedParks: IPark[];
 }

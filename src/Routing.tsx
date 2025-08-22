@@ -1,7 +1,7 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import HomePage from "./pages/HomePage/index";
 import SkillTrees from "./pages/SkillTrees/index";
-import {SkillTree} from "./pages/Tree"
+import {SkillTree} from "./pages/SkillTrees/Tree"
 import Header from "./components/Header";
 import { useEffect } from "react";
 import Footer from "./components/Footer";

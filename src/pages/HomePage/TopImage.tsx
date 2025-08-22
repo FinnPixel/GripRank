@@ -8,8 +8,8 @@ function TopImage() {
     <Box
       sx={{
         position: "relative",
-        height: "90vh", // Reduced height to better fit small screens
-        maxHeight: "940px", // Maximum height limit to prevent too large images on desktop
+        height: "93vh", // Reduced height to better fit small screens
+        maxHeight: "1080px", // Maximum height limit to prevent too large images on desktop
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
