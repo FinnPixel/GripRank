@@ -18,6 +18,7 @@ const FirstSection = () => {
         p: { xs: 2, sm: 4, md: 8 },
         mx: { xs: 4, sm: 16, lg: 16 },
         mt: 8,
+        mb: 8,
         borderRadius: 4,
         backgroundColor: "#FFFFFF",
         backdropFilter: "saturate(200%) blur(30px)",

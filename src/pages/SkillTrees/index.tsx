@@ -131,13 +131,8 @@ const SkillTrees = () => {
 
   return (
     <Box>
-      <SecondaryBar
-        onHandleEnter={onHandleEnter}
-        displayedParks={displayedParks}
-      />
       <ThemeProvider theme={theme}>
         <MainContent>
-          <Map parks={parks} />
           <FirstSection displayedParks={displayedParks} />
         </MainContent>
       </ThemeProvider>

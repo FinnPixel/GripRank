@@ -1,4 +1,6 @@
 import handstand from "./../../assets/images/handstand2.png";
+import valley from "./../../assets/images/skill_rank_background.png"
+import valley02 from "./../../assets/images/skill_rank_background_02.png"
 import { Box, Typography } from "@mui/material";
 
 function TopImage() {
@@ -6,12 +8,12 @@ function TopImage() {
     <Box
       sx={{
         position: "relative",
-        height: "50vh", // Reduced height to better fit small screens
-        maxHeight: "640px", // Maximum height limit to prevent too large images on desktop
+        height: "90vh", // Reduced height to better fit small screens
+        maxHeight: "940px", // Maximum height limit to prevent too large images on desktop
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        backgroundImage: `url(${handstand})`, // Ensure the path is correct
+        backgroundImage: `url(${valley02})`, // Ensure the path is correct
         backgroundSize: "cover",
         color: "white",
         textAlign: "center",
@@ -23,10 +25,10 @@ function TopImage() {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: `url(${handstand})`,
+          backgroundImage: `url(${valley02})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          filter: "brightness(50%)",
+          filter: "brightness(100%)",
         },
       }}
     >

@@ -59,7 +59,9 @@ function Footer() {
                   flexDirection: "row",
                 }}
               >
-                <Box
+                {
+                  /*
+                  <Box
                   component="img"
                   sx={{
                     width: "35px",
@@ -69,8 +71,10 @@ function Footer() {
                     marginRight: 2,
                   }}
                   alt="logo"
-                  src={logo}
+                  src={undefined}
                 />
+                  */
+                }
                 <Typography
                   variant="h6"
                   sx={{

@@ -45,7 +45,7 @@ const Header = () => {
       <Toolbar
         sx={{
           justifyContent: "space-between",
-          minHeight: { xs: 84, sm: 84, md: 84 },
+          minHeight: { xs: 74, sm: 74, md: 74 },
         }}
       >
         <Box
