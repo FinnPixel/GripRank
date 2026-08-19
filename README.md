@@ -1,30 +1,36 @@
-# React + TypeScript + Vite
+# GripRank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A calisthenics app — find local calisthenics parks on an interactive map and track your skill progression through a visual skill tree.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Park map** — browse calisthenics parks on an interactive Leaflet map, with search/filter by name.
+- **Skill tree** — track bodyweight skill progression (e.g. Push Up → Pike Push Up → Handstand Push Up) through a level-based tree with goals and XP.
+- **Home & about pages** — landing page and project info.
 
-## Expanding the ESLint configuration
+## Tech stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+React 18, TypeScript, Vite, MUI + Emotion + styled-components, Leaflet / react-leaflet, ECharts, react-router-dom.
 
-- Configure the top-level `parserOptions` property like this:
+## Getting started
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+yarn install
+yarn dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Other scripts:
+
+```bash
+yarn build    # type-check and build for production
+yarn lint     # run ESLint
+yarn preview  # preview a production build locally
+```
+
+## Status
+
+This is a frontend-only work in progress. The park list and skill tree currently run on static placeholder data (the app tries `/api/parks` first and falls back to a static list of Munich-area parks); a backend to serve live data hasn't been built yet.
+
+## License
+
+MIT — see [LICENSE](LICENSE).
